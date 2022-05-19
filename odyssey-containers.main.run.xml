@@ -10,6 +10,7 @@
             <entry key="DB_URL" value="mysql://10.1.3.16:32001/ODYSSEY_PROD" />
             <entry key="DB_USER" value="jboss_odyssey_user" />
             <entry key="HTTP_PORT" value="30003" />
+            <entry key="ODYSSEY_SERVER" value="http://10.1.3.16/odyssey-server-embedded-developer-dev" />
             <entry key="RABBIT_HOST" value="10.1.3.16" />
             <entry key="RABBIT_PASSWORD" value="Pa55w0rd" />
             <entry key="RABBIT_PORT" value="32071" />
@@ -24,9 +25,7 @@
           <list />
         </option>
         <option name="taskNames">
-          <list>
-            <option value="quarkusDev" />
-          </list>
+          <list />
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
