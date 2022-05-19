@@ -10,7 +10,7 @@ class ContainerEventProcessor {
     private val random = Random()
 
     @Incoming("container-events")
-    fun process(quoteRequest: String) {
-        println(quoteRequest)
+    fun process(id: String) {
+        println(id)
     }
 }
