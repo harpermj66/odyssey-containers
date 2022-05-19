@@ -1,0 +1,16 @@
+auth-server-url: ${AUTH_SERVER_URL}
+quarkus:
+  datasource:
+    db-kind: mysql
+    username: ${DB_USER}
+    password: ${DB_PWD}
+    reactive:
+      url: ${DB_URL}
+  http:
+    port: ${HTTP_PORT:8080}
+  smallrye-openapi:
+    path: /swagger
+    info-version: 1.0.1
+  swagger-ui:
+    always-include: true
+    path: /swagger-ui
