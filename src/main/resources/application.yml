@@ -1,4 +1,13 @@
 auth-server-url: ${AUTH_SERVER_URL}
+mp:
+  messaging:
+    incoming:
+      container-events:
+        connector: smallrye-rabbitmq
+        queue:
+          name: container-events
+        exchange:
+          name: container-events
 quarkus:
   datasource:
     db-kind: mysql
@@ -14,3 +23,7 @@ quarkus:
   swagger-ui:
     always-include: true
     path: /swagger-ui
+rabbitmq-host:  ${RABBIT_HOST:}
+rabbitmq-port: ${RABBIT_PORT:}
+rabbitmq-username: ${RABBIT_USERNAME:}
+rabbitmq-password: ${RABBIT_PASSWORD:}
